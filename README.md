@@ -1,6 +1,6 @@
 # Social Network Event Sourcing Example for Microservices
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/03693178d32b4db6bb6a1453e9b0c007)](https://app.codacy.com/app/kbastani/event-sourcing-microservices-example?utm_source=github.com&utm_medium=referral&utm_content=kbastani/event-sourcing-microservices-example&utm_campaign=Badge_Grade_Settings)[![Build Status](https://travis-ci.com/kbastani/event-sourcing-microservices-example.svg?branch=master)](https://travis-ci.com/kbastani/event-sourcing-microservices-example)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/03693178d32b4db6bb6a1453e9b0c007)](https://app.codacy.com/app/gstearmit/event-sourcing-microservices-example?utm_source=github.com&utm_medium=referral&utm_content=gstearmit/event-sourcing-microservices-example&utm_campaign=Badge_Grade_Settings)[![Build Status](https://travis-ci.com/gstearmit/event-sourcing-microservices-example.svg?branch=master)](https://travis-ci.com/gstearmit/event-sourcing-microservices-example)
 
 This project is a practical microservices reference example for demonstrating the basics of CQRS and Event Sourcing with Spring Boot and Spring Cloud. This tutorial walks you through getting this example up and running on Kubernetes using Docker Stacks. If you're unfamiliar with Kubernetes–no worries!–everything you need to get started is contained in this tutorial.
 
@@ -64,11 +64,11 @@ With this approach, we can get the best of both worlds—the large shared databa
 
 | Service Name                                                                                                            | Spring Boot                                                                                  | Spring Cloud                                                                                        | ORM                                                                                      | Messaging                                 | Service Type                     |
 | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------- |
-| *[Friend](https://github.com/kbastani/event-sourcing-microservices-example/tree/master/friend-service)*                 | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [R2DBC](https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M1/reference/html/)          | [Apache Kafka](https://kafka.apache.org/) | [Domain](#domain-services)       |
-| *[User](https://github.com/kbastani/event-sourcing-microservices-example/tree/master/user-service)*                     | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [R2DBC](https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M1/reference/html/)          | [Apache Kafka](https://kafka.apache.org/) | [Domain](#domain-services)       |
-| *[Recommendation](https://github.com/kbastani/event-sourcing-microservices-example/tree/master/recommendation-service)* | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [Neo4j OGM](https://docs.spring.io/spring-data/neo4j/docs/5.1.3.RELEASE/reference/html/) | [Apache Kafka](https://kafka.apache.org/) | [Aggregate](#aggregate-services) |
-| *[Discovery](https://github.com/kbastani/event-sourcing-microservices-example/tree/master/discovery-service)*           | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [N/A](https://docs.spring.io/spring-data/neo4j/docs/5.1.3.RELEASE/reference/html/)       | [N/A](https://kafka.apache.org/)          | *Netflix Eureka*                 |
-| *[Gateway](https://github.com/kbastani/event-sourcing-microservices-example/tree/master/edge-service)*                  | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [N/A](https://docs.spring.io/spring-data/neo4j/docs/5.1.3.RELEASE/reference/html/)       | [N/A](https://kafka.apache.org/)          | *Spring Cloud Gateway*           |
+| *[Friend](https://github.com/gstearmit/event-sourcing-microservices-example/tree/master/friend-service)*                 | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [R2DBC](https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M1/reference/html/)          | [Apache Kafka](https://kafka.apache.org/) | [Domain](#domain-services)       |
+| *[User](https://github.com/gstearmit/event-sourcing-microservices-example/tree/master/user-service)*                     | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [R2DBC](https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M1/reference/html/)          | [Apache Kafka](https://kafka.apache.org/) | [Domain](#domain-services)       |
+| *[Recommendation](https://github.com/gstearmit/event-sourcing-microservices-example/tree/master/recommendation-service)* | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [Neo4j OGM](https://docs.spring.io/spring-data/neo4j/docs/5.1.3.RELEASE/reference/html/) | [Apache Kafka](https://kafka.apache.org/) | [Aggregate](#aggregate-services) |
+| *[Discovery](https://github.com/gstearmit/event-sourcing-microservices-example/tree/master/discovery-service)*           | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [N/A](https://docs.spring.io/spring-data/neo4j/docs/5.1.3.RELEASE/reference/html/)       | [N/A](https://kafka.apache.org/)          | *Netflix Eureka*                 |
+| *[Gateway](https://github.com/gstearmit/event-sourcing-microservices-example/tree/master/edge-service)*                  | [2.1.2.RELEASE](https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/) | [Greenwich.RC2](https://cloud.spring.io/spring-cloud-static/Greenwich.RC1/single/spring-cloud.html) | [N/A](https://docs.spring.io/spring-data/neo4j/docs/5.1.3.RELEASE/reference/html/)       | [N/A](https://kafka.apache.org/)          | *Spring Cloud Gateway*           |
 
 ## Evaluation Scenarios
 
@@ -159,7 +159,7 @@ It doesn't matter which cluster you decide to use–whether it is running locall
 
 #### Build and Deploy
 
-The current configuration is setup to build, push, and deploy the docker compose containers to my Docker Hub account. To fix this, you'll need to make a few changes. Simply put, do a replace-all in `./docker-compose.yml` and `./deployment/docker/docker-compose-build.yml` by replacing `kbastani` with your Docker Hub username.
+The current configuration is setup to build, push, and deploy the docker compose containers to my Docker Hub account. To fix this, you'll need to make a few changes. Simply put, do a replace-all in `./docker-compose.yml` and `./deployment/docker/docker-compose-build.yml` by replacing `gstearmit` with your Docker Hub username.
 
 ##### Using your DockerHub Account
 
@@ -174,14 +174,14 @@ export username="replace"
 *This next command replaces all instances of my username in the main docker compose file.*
 
 ```bash
-sed -i '' -e 's/kbastani/'$username'/g' \
+sed -i '' -e 's/gstearmit/'$username'/g' \
     ./docker-compose.yml
 ```
 
 *This next command replaces all instances of my username in another Docker Compose file that is meant for **pushing** the compiled containers to Docker Hub.*
 
 ```bash
-sed -i '' -e 's/kbastani/'$username'/g' \
+sed -i '' -e 's/gstearmit/'$username'/g' \
     ./deployment/docker/docker-compose-build.yml
 ```
 
@@ -286,7 +286,7 @@ helm init --service-account=tiller
 Clone this repo locally:
 
 ```bash
-git clone https://github.com/kbastani/event-sourcing-microservices-example.git
+git clone https://github.com/gstearmit/event-sourcing-microservices-example.git
 cd event-sourcing-microservices-example
 ```
 
