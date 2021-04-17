@@ -6,8 +6,6 @@ services:
 env:
   matrix:
   - DOCKER_COMPOSE_VERSION=1.23.2
-  - DOCKER_PASSWORD=Ngoc875052Phuca4Phuca4
-  - DOCKER_USERNAME=gstearmit
 before_deploy:
 - sudo rm /usr/local/bin/docker-compose
 - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname
