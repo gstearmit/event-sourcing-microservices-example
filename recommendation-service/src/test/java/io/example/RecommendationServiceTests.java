@@ -68,7 +68,7 @@ public class RecommendationServiceTests {
 	@Test
 	@Transactional
 	public void testSendReceive() {
-		User kenny = new User(1L, "Kenny", "Bastani"),
+		User   kenny = new User(1L, "Kenny", "Bastani"),
 				john = new User(2L, "John", "Doe"),
 				paul = new User(3L, "Paul", "Doe"),
 				ringo = new User(4L, "Ringo", "Doe"),

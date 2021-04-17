@@ -6,7 +6,6 @@ import io.example.domain.user.entity.User;
  * An event that encapsulates a state transition for the {@link User}
  * domain object.
  *
- * @link Kenny Bastani
  */
 public class UserEvent {
 

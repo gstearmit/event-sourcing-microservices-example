@@ -10,7 +10,7 @@ import java.util.Objects;
  * mutual friends who I am not yet friends with. This is a typical recommendation query you would find on
  * most social networks.
  *
- * @author Kenny Bastani
+
  */
 @QueryResult
 public class RankedUser {

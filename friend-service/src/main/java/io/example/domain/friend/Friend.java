@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * The domain entity representing a friend relationship between two users.
  *
- * @author Kenny Bastani
+
  */
 @Table("friend")
 public class Friend {

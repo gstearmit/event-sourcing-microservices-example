@@ -12,7 +12,7 @@ import java.util.Objects;
  * A projection of the {@link Friend} domain object that is owned by the
  * friend service.
  *
- * @author Kenny Bastani
+
  */
 @RelationshipEntity("FRIEND")
 public class Friend {

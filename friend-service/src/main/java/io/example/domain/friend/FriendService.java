@@ -23,7 +23,6 @@ import java.util.function.Function;
  * perform a dual-write to a separate application before finalizing the transaction and committing the result to the
  * attached database.
  *
- * @author Kenny Bastani
  */
 @Service
 public class FriendService {

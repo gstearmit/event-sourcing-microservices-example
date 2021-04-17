@@ -20,7 +20,6 @@ import javax.validation.constraints.NotNull;
 /**
  * Controller responsible for exposing REST API interface for managing {@link Friend} entities.
  *
- * @author Kenny Bastani
  */
 @RestController
 @RequestMapping("/v1")

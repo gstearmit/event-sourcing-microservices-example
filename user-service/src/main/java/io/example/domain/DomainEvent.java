@@ -7,7 +7,6 @@ import java.io.Serializable;
  *
  * @param <T>  is the type of domain object that this event applies to.
  * @param <ID> is the type of identity for the domain event.
- * @author Kenny Bastani
  */
 public abstract class DomainEvent<T, ID> implements Serializable {
 

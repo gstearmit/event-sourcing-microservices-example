@@ -13,7 +13,7 @@ import java.util.Random;
  * A projection of the {@link User} domain object that is owned by the
  * user service.
  *
- * @author Kenny Bastani
+
  */
 @NodeEntity
 public class User {

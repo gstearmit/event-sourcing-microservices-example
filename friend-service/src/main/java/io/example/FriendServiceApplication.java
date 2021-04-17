@@ -13,7 +13,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 /**
  * The microservice that manages domain data for friend requests.
  *
- * @author Kenny Bastani
  */
 @SpringBootApplication
 public class FriendServiceApplication {

@@ -5,7 +5,6 @@ import java.util.UUID;
 /**
  * An event that encapsulates a state transition for the {@link User} domain object.
  *
- * @link Kenny Bastani
  */
 public class UserEvent extends DomainEvent<User, Integer> {
 

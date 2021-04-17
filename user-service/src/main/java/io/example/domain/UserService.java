@@ -17,8 +17,13 @@ import java.util.function.Consumer;
  * perform a dual-write to a separate application before finalizing the transaction and committing the result to the
  * attached database.
  *
- * @author Kenny Bastani
+ * * {@Link UserService} chứa các phương pháp để quản lý trạng thái giao dịch của các thực thể {@link User}. Mỗi
+ *   * phương thức thay đổi trạng thái của thực thể {@link User} sẽ cho phép bạn chỉ định {@link Consumer <User>} gọi lại.
+ *   * Chức năng gọi lại cung cấp cho bạn tham chiếu đến thực thể {@link User} đã cam kết trước, cho phép bạn
+ *   * thực hiện ghi kép vào một ứng dụng riêng biệt trước khi hoàn tất giao dịch và cam kết kết quả cho
+ *   * cơ sở dữ liệu đính kèm.
  */
+
 @Service
 public class UserService {
 
