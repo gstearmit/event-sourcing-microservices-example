@@ -7,7 +7,7 @@ import reactor.core.publisher.Mono;
 /**
  * The repository for managing {@link User} data.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 public interface UserRepository extends R2dbcRepository<User, Long> {
 

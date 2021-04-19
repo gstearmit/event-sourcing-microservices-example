@@ -13,7 +13,7 @@ import reactor.test.StepVerifier;
 /**
  * Tests the transactional guarantees of the {@link UserService}.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @EnableAutoConfiguration
 public class UserServiceTests extends AbstractUnitTest {

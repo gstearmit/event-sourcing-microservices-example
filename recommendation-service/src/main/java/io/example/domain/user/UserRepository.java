@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * Repository for managing {@link User} data and friend connections.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @Repository
 public interface UserRepository extends Neo4jRepository<User, Long> {

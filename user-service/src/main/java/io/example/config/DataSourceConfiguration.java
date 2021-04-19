@@ -32,7 +32,7 @@ import javax.validation.constraints.NotNull;
  * repositories, schema creation must be handled manually or using a tool, like Liquibase. This class configures R2DBC
  * while also configuring Liquibase to be able to manage the schema creation and migration.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @Configuration
 @EnableR2dbcRepositories(basePackages = "io.example")

@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  * to a graph operation that replicates a connected view of domain data
  * across microservices.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @Configuration
 @EnableBinding(UserSink.class)

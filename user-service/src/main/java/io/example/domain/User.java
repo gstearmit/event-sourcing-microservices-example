@@ -11,7 +11,7 @@ import java.util.Objects;
 /**
  * The {@link User} domain entity representing the identity of a user.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @Table(value = "users")
 public class User {

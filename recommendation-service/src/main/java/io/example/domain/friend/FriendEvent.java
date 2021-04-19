@@ -6,7 +6,7 @@ import io.example.domain.friend.entity.Friend;
  * An event that encapsulates a state transition for the {@link Friend}
  * domain object.
  *
- * @link Kenny Bastani
+ * @link Gstearmit Jack
  */
 public class FriendEvent {
 

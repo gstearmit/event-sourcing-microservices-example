@@ -15,7 +15,7 @@ import reactor.util.Loggers;
 /**
  * This is the main REST API for the {@link User} service.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @RestController
 @RequestMapping("/v1")

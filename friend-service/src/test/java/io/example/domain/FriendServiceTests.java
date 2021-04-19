@@ -25,7 +25,7 @@ import java.util.function.Function;
 /**
  * Tests the transactional guarantees of the {@link FriendService}.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @EnableAutoConfiguration
 public class FriendServiceTests extends AbstractUnitTest {

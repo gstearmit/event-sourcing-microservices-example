@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * The microservice that manages the {@link User} domain.
  *
- * @author Kenny Bastani
+ * @author Gstearmit Jack
  */
 @SpringBootApplication
 public class UserServiceApplication {
